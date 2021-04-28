@@ -1,0 +1,167 @@
+@charset "ISO-8859-1";
+
+body {
+	/* Ubicación de la imagen */
+	background-image:
+		url(https://img2.freepng.es/20180326/suw/kisspng-computer-software-desktop-wallpaper-clip-art-sky-5ab93e2c47e7b5.1403352415220895162945.jpg);
+	/* Para dejar la imagen de fondo centrada, vertical y
+     horizontalmente */
+	background-position: center center;
+	/* Para que la imagen de fondo no se repita */
+	background-repeat: no-repeat;
+	/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+	background-attachment: fixed;
+	/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+	background-size: cover;
+}
+
+/* Clases de ubicación */
+.contenido {
+	background-color:rgba(255, 255, 255, 0.324);
+	padding: 1rem 1rem;
+	width: 100%;	
+	margin: 0 auto;
+}
+.centrar {
+	text-align-last: center;
+	margin: 40px;
+}
+
+.bloque {
+	display: inline-block;
+	padding: 1%;
+	margin: 2%;
+}
+
+
+/* formato imagen */
+
+.imagen{
+	text-align:center; 
+	margin: 25px auto;
+}
+
+img{
+    display: inline;
+    margin: 1%;
+    max-width: 40%;
+    width: 30%;
+}
+
+/* formato formulario */
+
+.formulario{
+	background-color: rgba(255, 255, 255, 0.324);
+	text-align:center;
+    font-size: 1 em;
+    width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/*inputs*/
+.campos-form{
+	margin-top:20px;
+	width: 100%;
+	height: 40px;
+}
+
+
+/*textos de formularios*/
+
+.formulario label{
+	font-size:20px;
+	margin-right: 10px
+}
+
+
+/* Titulos y parrafo */
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 2 em;
+    text-align: justify; 
+}
+
+li{
+    font-size: 2 em;
+    text-align: justify; 
+}
+
+/*estilo del footer*/
+footer{
+	margin-top: 30px;
+	background-color: rgba(69, 183, 254, 0.434);
+	padding:5px 0 3px 0;
+
+}
+
+footer h1{
+	font-size: 12px;
+	margin-left:5px;
+}
+
+
+
+/* Dispositivos pequeños (teléfonos, 600px y menos) */
+@media only screen and (max-width: 600px) {
+	.navbar {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.contenido {
+		width: 90%;
+	}
+	
+	table {
+       display: block;
+       overflow-x: auto;
+     }
+	
+}
+
+/* Dispositivos pequeños (tabletas verticales y teléfonos largos, 600px y más) */
+@media only screen and (min-width: 600px) {
+   
+    .contenido {
+		width: 80%;
+	}
+	
+	table {
+       display: block;
+       overflow-x: auto;
+     }
+}
+  
+/* Dispositivos largos (laptops/escritorio, 992px y más) */
+@media only screen and (min-width: 992px) {
+  
+    .contenido {
+		width: 100%;
+		max-width: 1000px;
+	}
+	
+	table {
+       width: 100%;
+       display: table;
+     }
+    
+}
+
+
+
+
